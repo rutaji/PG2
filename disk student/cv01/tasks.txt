@@ -1,0 +1,15 @@
+- create functional project with all libraries
+
+- add proper error and quit handling
+    https://www.glfw.org/docs/latest/quick.html#quick_capture_error
+    https://www.glfw.org/docs/latest/quick.html#quick_key_input
+    
+- open GL context version 3.3, COMPATIBLE profile
+
+- Use  https://docs.gl/gl3/glGet to get basic info, and verify GL version and profile using following symbolic constants:
+   - GL_VENDOR, GL_RENDERER, GL_VERSION, GL_SHADING_LANGUAGE_VERSION
+   - GL_CONTEXT_PROFILE_MASK GL_CONTEXT_CORE_PROFILE_BIT
+
+- optional: get version info from glfw, glm, gli (or other interesting info)
+   
+- measure FPS (frame per second)

@@ -1,0 +1,17 @@
+- GLFW: add proper error and quit handling
+    https://www.glfw.org/docs/latest/quick.html#quick_capture_error
+    https://www.glfw.org/docs/latest/quick.html#quick_key_input
+
+- open GL context version 4.6, CORE profile (https://www.glfw.org/docs/latest/quick.html#quick_create_window)
+
+- check for OpenGL debug extension (should be present, if GL 4.6 works) and register+enable GL error callback 
+
+- register following callbacks, implement simple debug message notification
+	glfwSetKeyCallback(window, key_callback);
+	glfwSetFramebufferSizeCallback(window, fbsize_callback);
+	glfwSetMouseButtonCallback(window, mouse_button_callback);
+	glfwSetCursorPosCallback(window, cursor_position_callback);
+	glfwSetScrollCallback(window, scroll_callback);
+
+- add functionality, that allows to toggle V-Sync with single key (set Vertical Synchronization = 0/1)  
+ 
